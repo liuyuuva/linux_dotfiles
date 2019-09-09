@@ -4,6 +4,7 @@
 
 alias e='emacsclient -n -c -a ""'
 export EDITOR="emacsclient -n -c -a \"\""
+alias ebrowse_class='ebrowse $(find . -name "*.h" -o -name "*.cc")'
 source /opt/ros/melodic/setup.bash
 memcheck(){
 	valgrind --tool=memcheck --leak-check=yes --show-reachable=yes --track-fds=yes "$1"
