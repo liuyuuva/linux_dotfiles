@@ -2,6 +2,8 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+export PATH="$HOME/bin/clion/bin:$PATH"
+export PATH="$HOME/bin/pycharm/bin:$PATH"
 alias e='emacsclient -n -c -a ""'
 export EDITOR="emacsclient -n -c -a \"\""
 alias ebrowse_class='ebrowse $(find . -name "*.h" -o -name "*.cc")'
