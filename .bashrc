@@ -11,6 +11,11 @@ memcheck(){
 	valgrind --tool=memcheck --leak-check=yes --show-reachable=yes --track-fds=yes "$1"
 }
 
+#Virtualenvwrapper settings:
+export WORKON_HOME=$HOME/.virtualenvs
+VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+. ~/.local/bin/virtualenvwrapper.sh
+
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
