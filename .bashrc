@@ -6,6 +6,7 @@ export PATH="$HOME/bin/clion/bin:$PATH"
 export PATH="$HOME/bin/pycharm/bin:$PATH"
 alias e='emacsclient -n -c -a ""'
 alias lg='find . -name .git -type d -prune'
+alias gs='$HOME/linux_dotfiles/git-summary'
 export EDITOR="emacsclient -n -c -a \"\""
 alias ebrowse_class='ebrowse $(find . -name "*.h" -o -name "*.cc")'
 memcheck(){
