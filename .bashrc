@@ -5,11 +5,13 @@
 export PATH="$HOME/bin/clion/bin:$PATH"
 export PATH="$HOME/bin/pycharm/bin:$PATH"
 alias e='emacsclient -n -c -a ""'
+alias lg='find . -name .git -type d -prune'
 export EDITOR="emacsclient -n -c -a \"\""
 alias ebrowse_class='ebrowse $(find . -name "*.h" -o -name "*.cc")'
 memcheck(){
 	valgrind --tool=memcheck --leak-check=yes --show-reachable=yes --track-fds=yes "$1"
 }
+
 
 #Virtualenvwrapper settings:
 export WORKON_HOME=$HOME/.virtualenvs
